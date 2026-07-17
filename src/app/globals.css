@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --oui-crimson: #C41E3A;
+  --oui-crimson-dark: #8A1029;
+  --oui-gold: #FFD205;
+  --oui-gold-soft: #F5C518;
+  --oui-black: #141414;
+  --oui-ink: #2B2B2B;
+  --oui-white: #FFFFFF;
+  --oui-surface: #FAFAF8;
+  --oui-border: #E8E5DF;
+  --background: var(--oui-surface);
+  --foreground: var(--oui-ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-oui-crimson: var(--oui-crimson);
+  --color-oui-crimson-dark: var(--oui-crimson-dark);
+  --color-oui-gold: var(--oui-gold);
+  --color-oui-gold-soft: var(--oui-gold-soft);
+  --color-oui-black: var(--oui-black);
+  --color-oui-ink: var(--oui-ink);
+  --color-oui-white: var(--oui-white);
+  --color-oui-surface: var(--oui-surface);
+  --color-oui-border: var(--oui-border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+body::selection {
+  background: color-mix(in srgb, var(--oui-gold) 60%, white);
+  color: var(--oui-black);
+}
+
+a,
+button {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+@media print {
+  html,
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header,
+  nav,
+  aside,
+  .no-print,
+  form[action] button {
+    display: none !important;
+  }
+
+  main {
+    box-shadow: none !important;
+    background: white !important;
+  }
+
+  article {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

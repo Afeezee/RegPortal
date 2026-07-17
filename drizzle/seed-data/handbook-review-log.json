@@ -1,0 +1,1418 @@
+[
+  {
+    "severity": "warning",
+    "department": "Accounting",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Accounting",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": BFN 204 Financial Planning & Control (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": BFN 311 Agricultural Financing (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": BFN 312 Alternative Investment (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Business Administration",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Business Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": SOC 101 Introduction to Sociology (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": SOC 102 Introduction to Sociology II (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ACC 201 Financial Accounting I (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ACC 202 Financial Accounting II (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy And Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ACC 313 Financial Management I (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Missing unit count for GST 301; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 301 Basic Computer and Information"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Communication Technology (ICT) (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ACC 316 Financial Management II (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ECO 417 Applied Statistics (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Economics",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ECO 414 Petroleum Economics (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "International Relations",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": IRS 319 Gender Studies in the Developing World (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "International Relations",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": IRS 306 Ethnicity and Culture in Global Politics (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "International Relations",
+    "message": "Missing unit count for IRS 413; defaulted to 2 for supervisor review.",
+    "rawLine": "IRS 413 Technology"
+  },
+  {
+    "severity": "warning",
+    "department": "International Relations",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Ecology and Environmental Issues in World Politics (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "International Relations",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": IRS 408 Race and Ethnicity in International Relations (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Political Science",
+    "message": "Unable to parse course fragment",
+    "rawLine": "GST [303] Setting Up a Business Venture (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Missing unit count for GST 110; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 110 Agriculture"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Renewable Natural Resources"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Animal Husbandry and Health (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": PUB 207 Industrial & Organisational Psychology (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": PUB 208 Economic & Social Development (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": PUB 313 Elements of Government (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Public Administration",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": PUB 312 E-Governance (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Biochemistry",
+    "message": "Missing unit count for GST 105; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 105 Use of Library"
+  },
+  {
+    "severity": "warning",
+    "department": "Biochemistry",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Study Skills & ICT (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Industrial Chemistry",
+    "message": "Missing unit count for GST 105; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 105 Use of Library"
+  },
+  {
+    "severity": "warning",
+    "department": "Industrial Chemistry",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Study Skills & ICT (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 101 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 101 Use of English Language (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 107 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 107 Experimental Biology I (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course CHM 107 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "CHM 107 Experimental Chemistry I (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course PHY 107 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "PHY 107 Experimental Physics I (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 105 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 105 Use of Library (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "CHM 101(?) General Inorganic Chemistry (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 102 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 102 General Biology II (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "CHM 101(?) General Inorganic Chemistry I (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course PHY 102 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "PHY 102 General Physics II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "MTH 101(R) Elementary Mathematics II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course PHY 108 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "PHY 108 Experimental Physics II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 108 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 108 Experimental Biology II (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "CHM 108(R) Experimental Chemistry II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 102 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 102 African Culture and Civilization (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 104 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 104 Introduction to Entrepreneurial and Cooperate Governance (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 201 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 201 General Microbiology I (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 201 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 201 Basic Techniques in Microbiology (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 201 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 201 Introductory Genetics (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BCH 211 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BCH 211 Introduction to Cellular Biochemistry (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course CHM 201 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "CHM 201 Organic Chemistry II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course CHM 211 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "CHM 211 Analytical Chemistry I (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 233 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 233 Biostatistics I (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 203 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 203 History and Philosophy of Science (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 202 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 202 General Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for MCB 204; defaulted to 2 for supervisor review.",
+    "rawLine": "MCB 204 Principle of Sterilisation"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Disinfection and Chemotherapy (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 202 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 202 Introductory Ecology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course BIO 234 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "BIO 234 Biostatistics II (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "BCH 20x Structure and Chemistry of Biomolecules (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "CHM 21x Inorganic Chemistry II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "CHM 20x Experimental Chemistry II (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 204 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 204 Health Education and Basic Epidemiology (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 301 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 301 Immunology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 303 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 303 Food Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 305 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 305 Microbial Genetics (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 321 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 321 Soil Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 391 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 391 Industrial Attachment (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "BCH 05x Chemistry and Metabolism of Carbohydrates (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 307 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 307 Pharmaceutical Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 303 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 303 Peace Studies and Conflict Resolution (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course GST 305 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "GST 305 Introductory to Sociological Concepts (R)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 326 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 326 Report and Scientific Writing (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 306 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 306 Virology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 328 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 328 Microbial Bioremediation (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 322 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 322 Bacteriology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 324 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 324 Mycology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 312 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 312 Aquatic Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for BIO 332; defaulted to 2 for supervisor review.",
+    "rawLine": "BIO 332 Introduction to Plant Diseases (Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for BIO 352; defaulted to 2 for supervisor review.",
+    "rawLine": "BIO 352 Biology of Tropical Parasites/Parasitology (Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 491 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 491 Research Project (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 401 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 401 Seminar in Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 407 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 407 Medical Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 423 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 423 Industrial Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 425 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 425 Environmental Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 431 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 431 Petroleum Microbiology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 405 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 405 Principles of Epidemiology and Public Health (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 424 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 424 Microbial Physiology and Metabolism (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 402 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 402 Microbial Quality Assurance (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 410 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 410 Microbial Ecology (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Course MCB 408 contains OCR or tag artefacts and should be supervisor-reviewed.",
+    "rawLine": "MCB 408 Waste and Waste Management (C)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for BIO 452; defaulted to 2 for supervisor review.",
+    "rawLine": "BIO 452 Host Pathogen"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Relation and Plant Disease Management (Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for BIO 418; defaulted to 2 for supervisor review.",
+    "rawLine": "BIO 418 Plants and Environmental Pollution Monitoring (Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "message": "Missing unit count for BIO 420; defaulted to 2 for supervisor review.",
+    "rawLine": "BIO 420 Introduction to Mushroom Growing (Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Physics with Electronics",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Physics with Electronics",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Computer Engineering",
+    "message": "Missing unit count for MTH 104; defaulted to 2 for supervisor review.",
+    "rawLine": "MTH 104 Vectors"
+  },
+  {
+    "severity": "warning",
+    "department": "Computer Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Geometry and Dynamics (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "Computer Engineering",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Computer Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy and Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Electrical/Electronics Engineering",
+    "message": "Missing unit count for MTH 104; defaulted to 2 for supervisor review.",
+    "rawLine": "MTH 104 Vectors"
+  },
+  {
+    "severity": "warning",
+    "department": "Electrical/Electronics Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Geometry & Dynamics (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "Electrical/Electronics Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "plus Power and Machine Option (EEE 509 Electrical Power Principles II, EEE 511 Electromechanical Devices Design) or Instrumentation & Control Option (EEE 513 Control Engineering II, EEE 515 Instrumentation Engineering) or Communication & Electronics (EEE 517 Digital Signal Processing, EEE 519 Wireless Communication) — students pick at least two-three units from options"
+  },
+  {
+    "severity": "warning",
+    "department": "Electrical/Electronics Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "plus options: Power and Machine (EEE 510 High Voltage Engineering, EEE 512 Electric Power System Planning & Control) or Instrumentation & Control (EEE 514 Advanced Instrumentation, EEE 516 Digital Control Systems) or Communication & Electronics (EEE 518 Industrial Electronics Design, EEE 520 Digital Image Processing) — pick at least two-three units"
+  },
+  {
+    "severity": "warning",
+    "department": "Mechanical Engineering",
+    "message": "Missing unit count for GST 202; defaulted to 2 for supervisor review.",
+    "rawLine": "GST 202 Logic"
+  },
+  {
+    "severity": "warning",
+    "department": "Mechanical Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Philosophy & Human Existence (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mechanical Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "plus Special Elective (3 units from options)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mechanical Engineering",
+    "message": "Unable to parse course fragment",
+    "rawLine": "plus Special Electives (6 units minimum from options like Mechanical Maintenance, Fluid Machinery, Numerical Control Machine Tools, Advanced Strength of Materials, Vehicle Dynamics)"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Unable to parse course fragment",
+    "rawLine": "include ARC 108 History of Traditional Architecture in Nigeria"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 110; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 110 Architectural Presentation Techniques I"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 112; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 112 Environmental Planning"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 114; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 114 Psychology of Perception"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 116; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 116 Human and Socio-Cultural Factors in Design (2 units each)"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ARC 214 Working Drawing"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 216; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 216 Natural and Artificial Lighting"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 218; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 218 Energy and Environment"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 220; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 220 Sociology of Housing (2 units each)"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ARC 319/QSV Maintenance of Construction Works"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 321; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 321 Water Supply and Drainage"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 323; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 323 Sustainable Building and Architecture"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 325; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 325 Estimating and Price Analysis I"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Unable to parse course fragment",
+    "rawLine": "ARC 317/QSV 201 Principles of Measurement and Description I (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": ARC 320 Acoustics and Noise Control"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 322; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 322 Problem Analysis in Architecture"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 324; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 324 Computer Aided Design II"
+  },
+  {
+    "severity": "warning",
+    "department": "Architecture",
+    "message": "Missing unit count for ARC 326; defaulted to 2 for supervisor review.",
+    "rawLine": "ARC 326 Professional Practice and Procedure"
+  },
+  {
+    "severity": "warning",
+    "department": "Nursing Sciences",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Programmes and Services"
+  },
+  {
+    "severity": "warning",
+    "department": "Nursing Sciences",
+    "message": "Unable to parse course fragment",
+    "rawLine": "plus One Elective (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "Nursing Sciences",
+    "message": "Missing unit count for NSG 513; defaulted to 2 for supervisor review.",
+    "rawLine": "NSG 513 Leadership"
+  },
+  {
+    "severity": "warning",
+    "department": "Nursing Sciences",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Management and Governance in Health Care (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Nursing Sciences",
+    "message": "Unable to parse course fragment",
+    "rawLine": "plus One Elective (3)"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": "(at least one Law & one Non-Law, not exceeding 24 units total): CIL 209 Labour Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PUL 207; defaulted to 2 for supervisor review.",
+    "rawLine": "PUL 207 The Nigerian Constitution I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 213; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 213 Conflict of Laws I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 201; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 201 Introduction to Political Analysis"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 205; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 205 Introduction to Comparative Politics"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 211; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 211 Human Rights II (*Only for direct entry students)"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CIL 210 Labour Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PUL 208; defaulted to 2 for supervisor review.",
+    "rawLine": "PUL 208 The Nigerian Constitution II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 212; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 212 Conflict of Laws II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 208; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 208 Foundations of Political Economy"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 204; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 204 Political Ideas"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 210; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 210 Human Rights II (*Only for direct entry students)"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": "(at least one Law & one Non-Law, not exceeding 24 units total): JIL 307 Administrative Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PPL 309; defaulted to 2 for supervisor review.",
+    "rawLine": "PPL 309 Oil and Gas Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PBL 311; defaulted to 2 for supervisor review.",
+    "rawLine": "PBL 311 Environmental Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 313; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 313 Comparative African Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 303; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 303 Politics of International Economic Relations"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 305; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 305 Contemporary Political Analysis"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": JIL 308 Administrative Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PPL 310; defaulted to 2 for supervisor review.",
+    "rawLine": "PPL 310 Oil and Gas Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PBL 312; defaulted to 2 for supervisor review.",
+    "rawLine": "PBL 312 Environmental Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 314; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 314 Comparative African Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 302; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 302 Comparative Federalism"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 306; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 306 Politics of Development and Underdevelopment"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CIL 407 Law of Banking and Negotiable Instruments I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 409; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 409 International Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PBL 411; defaulted to 2 for supervisor review.",
+    "rawLine": "PBL 411 Information and Communication Technologies Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PBL 413; defaulted to 2 for supervisor review.",
+    "rawLine": "PBL 413 Law and Medicine I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 401; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 401 Civil-Military Relations"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 403; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 403 Politics and Law in Africa"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 405; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 405 State and Economy in Africa"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for DSL 407; defaulted to 2 for supervisor review.",
+    "rawLine": "DSL 407 Defence and Security Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CIL 408 Law of Banking and Negotiable Instruments II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 410; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 410 International Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PBL 412; defaulted to 2 for supervisor review.",
+    "rawLine": "PBL 412 Information and Communication Technologies Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PBL 414; defaulted to 2 for supervisor review.",
+    "rawLine": "PBL 414 Health Law"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Law of Medicine II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 410; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 410 Political Parties and Pressure Groups"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 404; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 404 Contemporary Strategic Studies"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for DSL 408; defaulted to 2 for supervisor review.",
+    "rawLine": "DSL 408 Defence and Security Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CIL 507 Taxation Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 511; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 511 Criminology I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PPL 513; defaulted to 2 for supervisor review.",
+    "rawLine": "PPL 513 Family Law I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 515; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 515 Conveyancing I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 405; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 405 State and Economy in Africa"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 411; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 411 International Law and Organization"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CIL 508 Taxation Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 512; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 512 Criminology I"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for PPL 514; defaulted to 2 for supervisor review.",
+    "rawLine": "PPL 514 Family Law II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for JIL 516; defaulted to 2 for supervisor review.",
+    "rawLine": "JIL 516 Conveyancing II"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 412; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 412 International Politics of Mass Communication"
+  },
+  {
+    "severity": "warning",
+    "department": "Law",
+    "message": "Missing unit count for POL 414; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 414 Politics of Inter-Governmental Relations"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 107; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 107 Word Processing I (4, Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for ENG 101; defaulted to 2 for supervisor review.",
+    "rawLine": "ENG 101 English Language I (2, Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for SOC 101; defaulted to 2 for supervisor review.",
+    "rawLine": "SOC 101 Introduction to Sociology (2, Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for POL 102; defaulted to 2 for supervisor review.",
+    "rawLine": "POL 102 Introduction to Political Science (2, Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for ENG 102; defaulted to 2 for supervisor review.",
+    "rawLine": "ENG 102 Practical English Grammar (2, Elective)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CMT 209 Foundations of Broadcasting"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 211; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 211 Radio/Television Operation"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 213; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 213 Radio Programme Writing"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 215; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 215 Marketing Foundations for Advertising I"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for PSY 201; defaulted to 2 for supervisor review.",
+    "rawLine": "PSY 201 Introduction to Psychology I"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 219; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 219 Introduction to Film"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Cinema and Literature (2)"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CMT 216 Marketing Foundations for Advertising II"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 218; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 218 Radio News Reporting and Production"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 220; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 220 Announcing and Performance"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 222; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 222 Fundamentals of Media Relations"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for PSY 202; defaulted to 2 for supervisor review.",
+    "rawLine": "PSY 202 Introduction to Psychology II"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CMT 313 Manuscript Assessment"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 315; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 315 Book Publishing and the Law"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 317; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 317 Consumer Affairs"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 319; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 319 Television Programme Writing and Production"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CMT 312 International and Foreign Broadcasting"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 314; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 314 Advertising and PR Research"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 318; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 318 Advertising Creative Strategies and Tactics"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 320; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 320 Film"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": "Theory and Aesthetics"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 322; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 322 Film Production"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CMT 415 Film Criticism"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 417; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 417 Organisation and Management of AD and PR Agencies"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Unable to parse course fragment",
+    "rawLine": ": CMT 412 International/Multi-National Advertising"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 414; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 414 Special Topics in Advertising and PR"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 416; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 416 Documentary Film Production"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 418; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 418 Advertising Campaign Management"
+  },
+  {
+    "severity": "warning",
+    "department": "Mass Communication",
+    "message": "Missing unit count for CMT 420; defaulted to 2 for supervisor review.",
+    "rawLine": "CMT 420 Photo-Journalism Management"
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "level": 100,
+    "semesterLabel": "Second",
+    "message": "Duplicate course code GST 104 encountered with conflicting titles. Keeping first occurrence during seed review."
+  },
+  {
+    "severity": "warning",
+    "department": "Banking and Finance",
+    "level": 400,
+    "semesterLabel": "Second",
+    "message": "Duplicate course code BFN 491 encountered with conflicting titles. Keeping first occurrence during seed review."
+  },
+  {
+    "severity": "warning",
+    "department": "International Relations",
+    "level": 300,
+    "semesterLabel": "First",
+    "message": "Duplicate course code IRS 311 encountered with conflicting titles. Keeping first occurrence during seed review."
+  },
+  {
+    "severity": "warning",
+    "department": "Microbiology",
+    "level": 200,
+    "semesterLabel": "First",
+    "message": "Duplicate course code MCB 201 encountered with conflicting titles. Keeping first occurrence during seed review."
+  },
+  {
+    "severity": "warning",
+    "department": "Quantity Surveying",
+    "level": 200,
+    "semesterLabel": "First",
+    "message": "Duplicate course code ECN 207 encountered with conflicting titles. Keeping first occurrence during seed review."
+  },
+  {
+    "severity": "warning",
+    "department": "Nursing Sciences",
+    "level": 300,
+    "semesterLabel": "Second",
+    "message": "Duplicate course code NSG 308 encountered with conflicting titles. Keeping first occurrence during seed review."
+  }
+]
