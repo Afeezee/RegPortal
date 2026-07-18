@@ -52,17 +52,33 @@ async function ensureBootstrapAdmin() {
   bootstrapAttempted = true;
 
   try {
+    const passwordHash = await bcrypt.hash(env.ADMIN_BOOTSTRAP_SECRET, 10);
+
     const [existingUser] = await db
-      .select({ id: users.id })
+      .select({ id: users.id, passwordHash: users.passwordHash })
       .from(users)
       .where(eq(users.email, env.SUPER_ADMIN_EMAIL))
       .limit(1);
 
     if (existingUser) {
+      // Sync the stored hash if the operator rotated ADMIN_BOOTSTRAP_SECRET.
+      const stillMatches = await bcrypt.compare(
+        env.ADMIN_BOOTSTRAP_SECRET,
+        existingUser.passwordHash,
+      );
+      if (!stillMatches) {
+        await db
+          .update(users)
+          .set({
+            passwordHash,
+            accountStatus: "active",
+            role: "admin",
+            updatedAt: new Date(),
+          })
+          .where(eq(users.id, existingUser.id));
+      }
       return;
     }
-
-    const passwordHash = await bcrypt.hash(env.ADMIN_BOOTSTRAP_SECRET, 10);
 
     const [adminUser] = await db
       .insert(users)

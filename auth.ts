@@ -12,9 +12,17 @@ const credentialsSchema = z.object({
   password: z.string().min(6, "Password must be at least 6 characters."),
 });
 
-export const { handlers, auth, signIn, signOut } = NextAuth({
+const nextAuth = NextAuth({
   secret: env.NEXTAUTH_SECRET ?? "regportal-dev-secret-change-me",
   trustHost: true,
+  logger: {
+    error: (error) => {
+      if (error?.name === "JWTSessionError") return;
+      console.error("[auth]", error);
+    },
+    warn: (code) => console.warn("[auth]", code),
+    debug: () => {},
+  },
   pages: {
     signIn: "/login",
   },
@@ -123,3 +131,21 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
   },
 });
+
+export const { handlers, signIn, signOut } = nextAuth;
+const nextAuthAuth = nextAuth.auth;
+
+// Wrap `auth()` so a corrupt / stale session cookie (JWTSessionError, decrypt
+// failure after NEXTAUTH_SECRET rotation, etc.) does not crash server pages.
+// Middleware still uses the raw handler via nextAuth.auth passthrough.
+export const auth: typeof nextAuthAuth = (...args: unknown[]) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const result: any = (nextAuthAuth as any)(...args);
+  if (result && typeof result.then === "function") {
+    return result.catch((error: unknown) => {
+      console.error("[auth] session read failed, treating as signed-out:", error);
+      return null;
+    });
+  }
+  return result;
+};
