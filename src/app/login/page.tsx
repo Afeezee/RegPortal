@@ -5,8 +5,14 @@ import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { LoginForm } from "@/components/auth/login-form";
 
-export default async function LoginPage() {
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ claim?: string }>;
+}) {
   const session = await auth();
+  const params = await searchParams;
+  const claimSubmitted = params.claim === "submitted";
 
   if (session?.user?.role) {
     redirect(session.user.accountStatus === "pending" ? "/pending-verification" : `/${session.user.role}`);
@@ -33,6 +39,15 @@ export default async function LoginPage() {
           <p className="mt-5 max-w-xl text-base leading-8 text-[var(--oui-ink)]">
             Sign in with your approved account to register for your courses this semester.
           </p>
+
+          {claimSubmitted ? (
+            <div className="mt-8 rounded-3xl border border-emerald-200 bg-emerald-50 p-5 text-sm leading-7 text-emerald-900">
+              <p className="font-semibold">Account claim submitted.</p>
+              <p className="mt-2">
+                An administrator will verify your details soon. You will be able to sign in with your matric number once your account is approved.
+              </p>
+            </div>
+          ) : null}
 
           <div className="mt-8 rounded-3xl border border-[var(--oui-border)] bg-[color:color-mix(in_srgb,var(--oui-gold)_12%,white)] p-5 text-sm leading-7 text-[var(--oui-ink)]">
             <p className="font-semibold text-[var(--oui-black)]">First time here?</p>

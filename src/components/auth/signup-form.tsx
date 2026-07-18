@@ -4,6 +4,14 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 
+async function readJson(response: Response) {
+  try {
+    return await response.json();
+  } catch {
+    return {} as Record<string, unknown>;
+  }
+}
+
 export function SignupForm() {
   const router = useRouter();
   const [message, setMessage] = useState<string | null>(null);
@@ -17,30 +25,44 @@ export function SignupForm() {
         event.preventDefault();
         setError(null);
         setMessage(null);
-        const formData = new FormData(event.currentTarget);
+        const form = event.currentTarget;
+        const formData = new FormData(form);
 
         startTransition(async () => {
-          const response = await fetch("/api/auth/signup", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              fullName: formData.get("fullName"),
-              email: formData.get("email"),
-              matricNumber: formData.get("matricNumber"),
-              departmentName: formData.get("departmentName"),
-              currentLevel: formData.get("currentLevel"),
-              password: formData.get("password"),
-            }),
-          });
-
-          const payload = await response.json();
-          if (!response.ok) {
-            setError(payload.error ?? "Could not submit account claim.");
+          let response: Response;
+          try {
+            response = await fetch("/api/auth/signup", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                fullName: formData.get("fullName"),
+                email: formData.get("email"),
+                matricNumber: formData.get("matricNumber"),
+                departmentName: formData.get("departmentName"),
+                currentLevel: formData.get("currentLevel"),
+                password: formData.get("password"),
+              }),
+            });
+          } catch {
+            setError("Could not reach the server. Check your connection and try again.");
             return;
           }
 
-          setMessage("Account claim submitted. You can sign in after admin verification.");
-          event.currentTarget.reset();
+          const payload = await readJson(response);
+
+          if (!response.ok) {
+            const errText =
+              (payload as { error?: string }).error ??
+              (response.status === 404
+                ? "Sign-up isn't available on this deployment yet. Please contact your administrator."
+                : "Could not submit your account claim. Please try again.");
+            setError(errText);
+            return;
+          }
+
+          setMessage("Your account claim was submitted. An administrator will verify it soon.");
+          form.reset();
+          router.push("/login?claim=submitted");
           router.refresh();
         });
       }}
