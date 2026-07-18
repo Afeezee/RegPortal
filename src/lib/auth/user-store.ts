@@ -1,11 +1,18 @@
-import { and, eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 
 import { getDb } from "@/lib/db";
-import { accountClaims, admins, departments, students, users } from "@/lib/db/schema";
+import {
+  accountClaims,
+  admins,
+  advisers,
+  departments,
+  students,
+  users,
+} from "@/lib/db/schema";
 import { demoUsers } from "@/lib/demo/demo-data";
 import { env } from "@/lib/env";
-import type { AppRole } from "@/lib/types";
+import type { AccountStatus, AppRole } from "@/lib/types";
 
 export type AuthUserRecord = {
   id: string;
@@ -358,5 +365,200 @@ export async function rejectAccountClaim(
     })
     .where(and(eq(accountClaims.id, claimId), eq(accountClaims.status, "pending")));
 
+  return { ok: true };
+}
+
+// ─── Admin user management ────────────────────────────────────────────────
+
+export type ManagedUserRecord = {
+  id: string;
+  name: string;
+  email: string | null;
+  loginId: string;
+  role: AppRole;
+  accountStatus: AccountStatus;
+  matricNumber: string | null;
+  departmentName: string | null;
+  currentLevel: number | null;
+  adviserLevel: number | null;
+  createdAt: string;
+};
+
+export async function listAllUsers(): Promise<ManagedUserRecord[]> {
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      id: users.id,
+      name: users.name,
+      email: users.email,
+      loginId: users.loginId,
+      role: users.role,
+      accountStatus: users.accountStatus,
+      createdAt: users.createdAt,
+      matricNumber: students.matricNumber,
+      studentLevel: students.currentLevel,
+      studentDeptId: students.departmentId,
+      adviserLevel: advisers.level,
+      adviserDeptId: advisers.departmentId,
+    })
+    .from(users)
+    .leftJoin(students, eq(students.userId, users.id))
+    .leftJoin(advisers, eq(advisers.userId, users.id))
+    .orderBy(desc(users.createdAt));
+
+  const deptIds = new Set<string>();
+  for (const row of rows) {
+    if (row.studentDeptId) deptIds.add(row.studentDeptId);
+    if (row.adviserDeptId) deptIds.add(row.adviserDeptId);
+  }
+
+  const deptNames = new Map<string, string>();
+  if (deptIds.size > 0) {
+    const deptRows = await db
+      .select({ id: departments.id, name: departments.name })
+      .from(departments);
+    for (const d of deptRows) deptNames.set(d.id, d.name);
+  }
+
+  return rows.map((row) => ({
+    id: row.id,
+    name: row.name,
+    email: row.email,
+    loginId: row.loginId,
+    role: row.role,
+    accountStatus: row.accountStatus,
+    matricNumber: row.matricNumber,
+    departmentName:
+      (row.studentDeptId && deptNames.get(row.studentDeptId)) ||
+      (row.adviserDeptId && deptNames.get(row.adviserDeptId)) ||
+      null,
+    currentLevel: row.studentLevel,
+    adviserLevel: row.adviserLevel,
+    createdAt: row.createdAt.toISOString(),
+  }));
+}
+
+export type CreateStaffInput = {
+  fullName: string;
+  loginId: string;
+  email: string;
+  password: string;
+  role: "adviser" | "admin";
+  departmentName?: string;
+  adviserLevel?: number;
+  title?: string;
+};
+
+export async function createStaffAccount(input: CreateStaffInput) {
+  const db = getDb();
+  if (!db) throw new Error("A database connection is required.");
+
+  const loginId = input.loginId.trim();
+  const email = input.email.trim().toLowerCase();
+  const name = input.fullName.trim();
+  if (!loginId || !email || !name || !input.password) {
+    throw new Error("Name, username, email, and password are all required.");
+  }
+  if (input.password.length < 8) {
+    throw new Error("Password must be at least 8 characters.");
+  }
+
+  const [byLogin] = await db
+    .select({ id: users.id })
+    .from(users)
+    .where(eq(users.loginId, loginId))
+    .limit(1);
+  if (byLogin) throw new Error("That username is already taken.");
+
+  const [byEmail] = await db
+    .select({ id: users.id })
+    .from(users)
+    .where(eq(users.email, email))
+    .limit(1);
+  if (byEmail) throw new Error("An account with that email already exists.");
+
+  let departmentId: string | null = null;
+  if (input.role === "adviser") {
+    if (!input.departmentName) {
+      throw new Error("Advisers must be assigned to a department.");
+    }
+    if (!input.adviserLevel) {
+      throw new Error("Advisers must be assigned to a level.");
+    }
+    const [dept] = await db
+      .select({ id: departments.id })
+      .from(departments)
+      .where(eq(departments.name, input.departmentName))
+      .limit(1);
+    if (!dept) throw new Error("Unknown department — pick one from the list.");
+    departmentId = dept.id;
+  }
+
+  const passwordHash = await bcrypt.hash(input.password, 10);
+
+  const [created] = await db
+    .insert(users)
+    .values({
+      loginId,
+      email,
+      name,
+      role: input.role,
+      accountStatus: "active",
+      passwordHash,
+      verifiedAt: new Date(),
+    })
+    .returning({ id: users.id });
+
+  if (!created) throw new Error("Failed to create the account.");
+
+  if (input.role === "adviser" && departmentId) {
+    await db
+      .insert(advisers)
+      .values({
+        userId: created.id,
+        departmentId,
+        level: input.adviserLevel!,
+      })
+      .onConflictDoNothing();
+  }
+
+  if (input.role === "admin") {
+    await db
+      .insert(admins)
+      .values({ userId: created.id, title: input.title?.trim() || "Administrator" })
+      .onConflictDoNothing();
+  }
+
+  return { id: created.id };
+}
+
+export async function updateUserStatus(userId: string, status: AccountStatus) {
+  const db = getDb();
+  if (!db) throw new Error("A database connection is required.");
+  await db
+    .update(users)
+    .set({ accountStatus: status, updatedAt: new Date() })
+    .where(eq(users.id, userId));
+  return { ok: true };
+}
+
+export async function deleteUser(userId: string, currentAdminId: string) {
+  const db = getDb();
+  if (!db) throw new Error("A database connection is required.");
+  if (userId === currentAdminId) {
+    throw new Error("You cannot delete your own account.");
+  }
+  const [target] = await db
+    .select({ id: users.id, email: users.email })
+    .from(users)
+    .where(eq(users.id, userId))
+    .limit(1);
+  if (!target) throw new Error("Account not found.");
+  if (env.SUPER_ADMIN_EMAIL && target.email === env.SUPER_ADMIN_EMAIL) {
+    throw new Error("The super-admin account cannot be deleted.");
+  }
+  await db.delete(users).where(eq(users.id, userId));
   return { ok: true };
 }

@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
+import { Users } from "lucide-react";
 
 import { auth } from "@/auth";
 import { AdminPanel } from "@/components/portal/admin-panel";
@@ -44,6 +46,23 @@ export default async function AdminPage() {
       subtitle="Manage the course catalogue, open or close registration, and export submissions."
     >
       <div className="space-y-8">
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-[2rem] border border-[var(--oui-border)] bg-white/70 p-5">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--oui-crimson)]">
+              Accounts
+            </p>
+            <p className="mt-1 text-sm text-[var(--oui-ink)]">
+              Register staff and administrators, or suspend accounts that should no longer sign in.
+            </p>
+          </div>
+          <Link
+            href="/admin/users"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--oui-black)] px-4 py-2 text-sm font-semibold text-[var(--oui-gold)]"
+          >
+            <Users className="h-4 w-4" />
+            Open account management
+          </Link>
+        </div>
         <ClaimsPanel claims={dashboard.pendingClaims} />
         <AdminPanel
           window={dashboard.window}
