@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useTransition } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -40,14 +41,14 @@ export function LoginForm() {
     >
       <div className="space-y-2">
         <label className="text-sm font-medium text-[var(--oui-black)]" htmlFor="loginId">
-          Matric number (or staff username)
+          Matric number, staff username, or admin email
         </label>
         <input
           id="loginId"
           name="loginId"
           required
           className="w-full rounded-2xl border border-[var(--oui-border)] bg-white px-4 py-3 text-sm outline-none ring-0 placeholder:text-zinc-400 focus:border-[var(--oui-gold)]"
-          placeholder="U/17/CE/0285"
+          placeholder="U/17/CE/0285 or you@oui.edu.ng"
         />
       </div>
 
@@ -61,15 +62,19 @@ export function LoginForm() {
           type="password"
           required
           className="w-full rounded-2xl border border-[var(--oui-border)] bg-white px-4 py-3 text-sm outline-none ring-0 placeholder:text-zinc-400 focus:border-[var(--oui-gold)]"
-          placeholder="regportal-demo"
+          placeholder="Enter your password"
         />
       </div>
 
       {error ? (
         <p className="text-sm text-[var(--oui-crimson)]">
-          That did not work. Check your matric number and password, or try one of the demo accounts on the left.
+          That did not work. Check your matric number and password, or create an account claim.
         </p>
       ) : null}
+
+      <p className="text-sm text-[var(--oui-ink)]">
+        New student? <Link href="/signup" className="font-semibold text-[var(--oui-crimson)]">Create an account claim</Link> for admin verification.
+      </p>
 
       <button
         type="submit"

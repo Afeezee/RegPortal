@@ -1,15 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { auth } from "@/auth";
 import { LoginForm } from "@/components/auth/login-form";
-import { demoUsers } from "@/lib/demo/demo-data";
 
 export default async function LoginPage() {
   const session = await auth();
 
   if (session?.user?.role) {
-    redirect(`/${session.user.role}`);
+    redirect(session.user.accountStatus === "pending" ? "/pending-verification" : `/${session.user.role}`);
   }
 
   return (
@@ -31,20 +31,17 @@ export default async function LoginPage() {
             Welcome back.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-8 text-[var(--oui-ink)]">
-            Sign in with your matric number to register for your courses this semester.
+            Sign in with your approved account to register for your courses this semester.
           </p>
 
           <div className="mt-8 rounded-3xl border border-[var(--oui-border)] bg-[color:color-mix(in_srgb,var(--oui-gold)_12%,white)] p-5 text-sm leading-7 text-[var(--oui-ink)]">
-            <p className="font-semibold text-[var(--oui-black)]">Try it out — use these accounts</p>
-            <ul className="mt-3 space-y-2">
-              {demoUsers.map((user) => (
-                <li key={user.id}>
-                  <span className="font-medium capitalize text-[var(--oui-black)]">{user.role}:</span>{" "}
-                  <code className="rounded bg-white/70 px-1.5 py-0.5">{user.loginId}</code> · password{" "}
-                  <code className="rounded bg-white/70 px-1.5 py-0.5">{user.password}</code>
-                </li>
-              ))}
-            </ul>
+            <p className="font-semibold text-[var(--oui-black)]">First time here?</p>
+            <p className="mt-2">
+              <Link href="/signup" className="font-semibold text-[var(--oui-crimson)]">
+                Create an account claim
+              </Link>{" "}
+              with your matric number and wait for admin verification before signing in.
+            </p>
           </div>
         </section>
 

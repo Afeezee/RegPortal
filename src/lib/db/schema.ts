@@ -19,6 +19,7 @@ export const registrationStatusEnum = pgEnum("registration_status", [
   "approved",
   "queried",
 ]);
+export const accountStatusEnum = pgEnum("account_status", ["pending", "active", "suspended"]);
 
 export const colleges = pgTable(
   "colleges",
@@ -155,8 +156,10 @@ export const users = pgTable(
     email: text("email"),
     name: text("name").notNull(),
     role: roleEnum("role").notNull(),
+    accountStatus: accountStatusEnum("account_status").notNull().default("pending"),
     passwordHash: text("password_hash").notNull(),
     isActive: boolean("is_active").notNull().default(true),
+    verifiedAt: timestamp("verified_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow().notNull(),
   },
@@ -176,8 +179,29 @@ export const students = pgTable(
       .notNull(),
     currentLevel: integer("current_level").notNull(),
     email: text("email"),
+    claimedAt: timestamp("claimed_at", { withTimezone: true }),
   },
   (table) => [uniqueIndex("students_matric_number_idx").on(table.matricNumber)],
+);
+
+export const accountClaims = pgTable(
+  "account_claims",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    email: text("email").notNull(),
+    fullName: text("full_name").notNull(),
+    matricNumber: text("matric_number").notNull(),
+    requestedRole: roleEnum("requested_role").notNull().default("student"),
+    departmentName: text("department_name").notNull(),
+    level: integer("level").notNull(),
+    passwordHash: text("password_hash").notNull(),
+    status: accountStatusEnum("status").notNull().default("pending"),
+    reviewedByUserId: uuid("reviewed_by_user_id").references(() => users.id, { onDelete: "set null" }),
+    reviewedAt: timestamp("reviewed_at", { withTimezone: true }),
+    rejectionReason: text("rejection_reason"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
+  },
+  (table) => [uniqueIndex("account_claims_email_matric_idx").on(table.email, table.matricNumber)],
 );
 
 export const advisers = pgTable("advisers", {

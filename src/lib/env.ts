@@ -12,6 +12,8 @@ const envSchema = z.object({
   GROQ_API_KEY: nonEmpty(),
   NEXTAUTH_SECRET: nonEmpty(),
   NEXTAUTH_URL: nonEmpty(),
+  ADMIN_BOOTSTRAP_SECRET: nonEmpty(),
+  SUPER_ADMIN_EMAIL: nonEmpty(),
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
 });
 
@@ -20,6 +22,8 @@ const parsedEnv = envSchema.parse({
   GROQ_API_KEY: process.env.GROQ_API_KEY,
   NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
   NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+  ADMIN_BOOTSTRAP_SECRET: process.env.ADMIN_BOOTSTRAP_SECRET,
+  SUPER_ADMIN_EMAIL: process.env.SUPER_ADMIN_EMAIL,
   NODE_ENV: process.env.NODE_ENV,
 });
 
@@ -31,4 +35,8 @@ export function hasDatabaseUrl() {
 
 export function hasGroqApiKey() {
   return Boolean(env.GROQ_API_KEY);
+}
+
+export function hasAdminBootstrapSecret() {
+  return Boolean(env.ADMIN_BOOTSTRAP_SECRET);
 }

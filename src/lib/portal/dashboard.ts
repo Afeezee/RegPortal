@@ -1,4 +1,5 @@
 import { auth } from "@/auth";
+import { listPendingAccountClaims, type PendingClaimRecord } from "@/lib/auth/user-store";
 import {
   demoCompletedCourses,
   demoOutstandingCourses,
@@ -163,13 +164,22 @@ export async function getAdminDashboardData() {
     queried: registrations.filter((record) => record.status === "queried").length,
   };
 
+  let pendingClaims: PendingClaimRecord[] = [];
+  try {
+    pendingClaims = await listPendingAccountClaims();
+  } catch {
+    pendingClaims = [];
+  }
+
   return {
     admin: { name: session.user.name ?? "Admin" },
     window,
     registrations,
     counts,
     curriculumOverrides: listCurriculumOverrides(),
+    pendingClaims: pendingClaims.filter((claim) => claim.status === "pending"),
   };
 }
 
 export type { CurriculumOverride };
+export type { PendingClaimRecord };

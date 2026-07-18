@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { AdminPanel } from "@/components/portal/admin-panel";
 import { CatalogueBrowser, type CatalogueRow } from "@/components/portal/catalogue-browser";
+import { ClaimsPanel } from "@/components/portal/claims-panel";
 import { CurriculumEditor } from "@/components/portal/curriculum-editor";
 import { PortalShell } from "@/components/portal/shell";
 import { getAdminDashboardData } from "@/lib/portal/dashboard";
@@ -43,6 +44,7 @@ export default async function AdminPage() {
       subtitle="Manage the course catalogue, open or close registration, and export submissions."
     >
       <div className="space-y-8">
+        <ClaimsPanel claims={dashboard.pendingClaims} />
         <AdminPanel
           window={dashboard.window}
           registrations={dashboard.registrations}

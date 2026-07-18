@@ -54,6 +54,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           name: user.name,
           email: user.email,
           role: user.role,
+          accountStatus: user.accountStatus,
           loginId: user.loginId,
           matricNumber: user.matricNumber,
           currentLevel: user.currentLevel,
@@ -65,6 +66,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     jwt: async ({ token, user }) => {
       if (user) {
         token.role = user.role as AppRole;
+        token.accountStatus = user.accountStatus as "pending" | "active" | "suspended";
         token.loginId = user.loginId as string;
         token.matricNumber = user.matricNumber as string | undefined;
         token.currentLevel = user.currentLevel as number | undefined;
@@ -76,6 +78,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       if (session.user) {
         session.user.id = token.sub ?? "";
         session.user.role = token.role as AppRole;
+        session.user.accountStatus = token.accountStatus as "pending" | "active" | "suspended";
         session.user.loginId = token.loginId as string;
         session.user.matricNumber = token.matricNumber as string | undefined;
         session.user.currentLevel = token.currentLevel as number | undefined;
@@ -86,17 +89,34 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     authorized: async ({ auth: activeSession, request }) => {
       const pathname = request.nextUrl.pathname;
       const isAuthPage = pathname.startsWith("/login");
+      const isSignupPage = pathname.startsWith("/signup");
+      const isPendingPage = pathname.startsWith("/pending-verification");
       const isProtectedPortal =
         pathname.startsWith("/student") ||
         pathname.startsWith("/adviser") ||
         pathname.startsWith("/admin");
 
-      if (isAuthPage && activeSession?.user) {
+      if ((isAuthPage || isSignupPage) && activeSession?.user) {
+        if (activeSession.user.accountStatus === "pending") {
+          return Response.redirect(new URL("/pending-verification", request.nextUrl));
+        }
+        return Response.redirect(new URL(`/${activeSession.user.role}`, request.nextUrl));
+      }
+
+      if (isPendingPage && !activeSession?.user) {
+        return Response.redirect(new URL("/login", request.nextUrl));
+      }
+
+      if (isPendingPage && activeSession?.user && activeSession.user.accountStatus !== "pending") {
         return Response.redirect(new URL(`/${activeSession.user.role}`, request.nextUrl));
       }
 
       if (isProtectedPortal && !activeSession?.user) {
         return false;
+      }
+
+      if (isProtectedPortal && activeSession?.user?.accountStatus !== "active") {
+        return Response.redirect(new URL("/pending-verification", request.nextUrl));
       }
 
       return true;

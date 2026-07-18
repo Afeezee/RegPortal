@@ -6,6 +6,7 @@ export type DemoUserRecord = {
   email: string | null;
   loginId: string;
   role: AppRole;
+  accountStatus?: "pending" | "active" | "suspended";
   password: string;
   matricNumber?: string;
   currentLevel?: number;
@@ -19,6 +20,7 @@ export const demoUsers: DemoUserRecord[] = [
     email: "aquila@example.com",
     loginId: "U/17/CE/0285",
     role: "student",
+    accountStatus: "active",
     password: "regportal-demo",
     matricNumber: "U/17/CE/0285",
     currentLevel: 500,
@@ -30,6 +32,7 @@ export const demoUsers: DemoUserRecord[] = [
     email: "adviser@example.com",
     loginId: "adviser.cpe",
     role: "adviser",
+    accountStatus: "active",
     password: "regportal-demo",
     currentLevel: 500,
     departmentName: "Computer Engineering",
@@ -40,6 +43,7 @@ export const demoUsers: DemoUserRecord[] = [
     email: "admin@example.com",
     loginId: "admin.regportal",
     role: "admin",
+    accountStatus: "active",
     password: "regportal-demo",
   },
 ];
